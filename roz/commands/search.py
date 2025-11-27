@@ -1,4 +1,4 @@
-"""Search command for Jasmine CLI."""
+"""Search command for Roz CLI."""
 
 import os
 import re
@@ -51,11 +51,11 @@ def search(query, path, search_type, extension, ignore_case, max_results, hidden
 
     Examples:
 
-        jasmine search "def main"
+        roz search "def main"
 
-        jasmine search "TODO" -t content -e py
+        roz search "TODO" -t content -e py
 
-        jasmine search "test_*.py" -t file
+        roz search "test_*.py" -t file
     """
     search_path = Path(path).resolve()
     results = []

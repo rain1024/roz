@@ -1,16 +1,16 @@
-"""Main CLI entry point for Jasmine."""
+"""Main CLI entry point for Roz."""
 
 import click
 
-from jasmine import __version__
-from jasmine.commands.cloud import cloud
-from jasmine.commands.search import search
+from roz import __version__
+from roz.commands.cloud import cloud
+from roz.commands.search import search
 
 
 @click.group()
-@click.version_option(version=__version__, prog_name="jasmine")
+@click.version_option(version=__version__, prog_name="roz")
 def cli():
-    """Jasmine - An Agentic Coding CLI tool."""
+    """Roz - An Agentic Coding CLI tool."""
     pass
 
 

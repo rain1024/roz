@@ -1,4 +1,4 @@
-"""Cloud command for Jasmine CLI."""
+"""Cloud command for Roz CLI."""
 
 import subprocess
 from pathlib import Path
@@ -24,9 +24,9 @@ def cloud(level):
 
     Examples:
 
-        jasmine cloud
+        roz cloud
 
-        jasmine cloud -L 2
+        roz cloud -L 2
     """
     content_path = get_content_path()
     template_path = content_path / "industry-standard-cloud"

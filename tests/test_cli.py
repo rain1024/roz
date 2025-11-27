@@ -1,8 +1,8 @@
-"""Tests for Jasmine CLI."""
+"""Tests for Roz CLI."""
 
 from click.testing import CliRunner
 
-from jasmine.cli import cli
+from roz.cli import cli
 
 
 def test_cli_version():
@@ -10,7 +10,7 @@ def test_cli_version():
     runner = CliRunner()
     result = runner.invoke(cli, ["--version"])
     assert result.exit_code == 0
-    assert "jasmine" in result.output
+    assert "roz" in result.output
     assert "0.1.0" in result.output
 
 
@@ -19,7 +19,7 @@ def test_cli_help():
     runner = CliRunner()
     result = runner.invoke(cli, ["--help"])
     assert result.exit_code == 0
-    assert "Jasmine" in result.output
+    assert "Roz" in result.output
 
 
 def test_search_help():
